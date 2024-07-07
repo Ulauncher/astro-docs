@@ -11,16 +11,24 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Color Themes',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Overview', slug: 'themes/themes' },
+						{ label: 'Creating custom themes', slug: 'themes/custom' },
+						{ label: 'Migrating themes', slug: 'themes/migrate' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+					label: 'Extension Development',
+					items: [
+						{ label: 'Overview', slug: 'extensions/overview' },
+						{ label: 'Development Tutorial', slug: 'extensions/tutorial' },
+						{ label: 'Testing & Logging', slug: 'extensions/debugging' },
+						{ label: 'Examples', slug: 'extensions/examples' },
+						{ label: 'Migrating extensions', slug: 'extensions/migration' },
+					],
+				}
 			],
 		}),
 	],
